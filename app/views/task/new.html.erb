@@ -1,0 +1,10 @@
+<%= form_for @task do |f| %>
+	<%= f.text_field :name %>
+	<%= f.submit 'Create Task' %>
+<% end %>
+
+<h3>Incomplete</h3>
+<%= render Task.incomplete %>
+
+<h3>Complete</h3>
+<%= render Task.complete %>
